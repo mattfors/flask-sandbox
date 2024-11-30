@@ -1,0 +1,17 @@
+{
+  "name": "Flask Sandbox",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-anaconda",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11.5"
+    }
+  },
+  "postCreateCommand": "conda env create -f environment.yml",
+  "forwardPorts": [5000],
+  "portsAttributes": {
+    "5000": {
+      "label": "Flask App",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
