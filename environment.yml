@@ -5,3 +5,5 @@ channels:
 dependencies:
   - python=3.11.5
   - flask=3.0.0
+  - bokeh=2.4.3
+  - numpy
